@@ -1,4 +1,4 @@
-var bdFutbolRosterSniffer = () => {
+var bdFutbolRosterScraper = () => {
     const rawRows = document.querySelectorAll('#taulaplantilla tr');
     const rows = [...rawRows];
 
@@ -33,3 +33,4 @@ var bdFutbolRosterSniffer = () => {
 }
 
 console.log("¡A robar plantillas, que no hay pasta pa'comer!");
+console.log(bdFutbolRosterScraper())
