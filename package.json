@@ -1,0 +1,24 @@
+{
+  "name": "bdfutbol-chromeextension",
+  "version": "0.1.0",
+  "description": "A Google Chrome extension to get data from bdfutbol.com in a consumable way (for instance, as a JSON object) with the least possible number of manual tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisGilGB/bdfutbol-chromeextension.git"
+  },
+  "keywords": [
+    "bdfutbol",
+    "chrome",
+    "extension"
+  ],
+  "author": "Luis Gil Gutiérrez de la Barreda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisGilGB/bdfutbol-chromeextension/issues"
+  },
+  "homepage": "https://github.com/LuisGilGB/bdfutbol-chromeextension#readme"
+}

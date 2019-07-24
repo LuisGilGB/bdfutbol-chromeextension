@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "BDFutbol Chrome Extension",
+	"version": "0.1.0",
+	"description": "Extension to make some data scraping at bdfutbol.com",
+	"browser_action": {
+		"default_icon": "img/icon.png"
+	},
+	"background": {
+		"scripts": ["src/background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.bdfutbol.com/*/t/t*.html"
+			],
+			"js": [
+				"src/bdFutbolRosterScraper.js"
+			]
+		}
+	]
+}
