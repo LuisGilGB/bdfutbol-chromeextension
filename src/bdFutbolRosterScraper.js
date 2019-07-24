@@ -1,4 +1,6 @@
-var bdFutbolRosterScraper = () => {
+const BROWSER_ACTION_CLICKED_KEY = 'BDFUTBOL_EXTENSION_BROWSER_ACTION_CLICKED';
+
+const bdFutbolRosterScraper = () => {
     const rawRows = document.querySelectorAll('#taulaplantilla tr');
     const rows = [...rawRows];
 
@@ -33,4 +35,9 @@ var bdFutbolRosterScraper = () => {
 }
 
 console.log("¡A robar plantillas, que no hay pasta pa'comer!");
-console.log(bdFutbolRosterScraper())
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.type === BROWSER_ACTION_CLICKED_KEY) {
+        console.log(bdFutbolRosterScraper());
+    }
+})
