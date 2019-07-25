@@ -13,7 +13,7 @@ const bdFutbolRosterScraper = () => {
     const rawRows = document.querySelectorAll('#taulaplantilla tr');
     const rows = [...rawRows];
 
-    const isPlayerRow = r => r.childNodes.length > 1 && r.children[0].nodeName !== 'TH';
+    const isPlayerRow = r => r.childNodes.length > 1 && r.childNodes[0].nodeName !== 'TH';
     const getIdFromHref = href => href.split('/').reverse()[0].split('.')[0];
     const getAlias = r => r.querySelector('.aligesq a').innerText;
     const getCompleteName = r => r.querySelector('.aligesq.colnom a').innerText;
