@@ -30,7 +30,8 @@
                 "*://www.bdfutbol.com/*/t/t*.html"
             ],
             "js": [
-                "src/bdFutbolRosterScraper.js"
+                "src/bdFutbolRosterScraper.js",
+                "src/bdFutbolClubsScraper.js"
             ]
         }
     ]

@@ -1,5 +1,3 @@
-const BROWSER_ACTION_CLICKED_KEY = 'BDFUTBOL_EXTENSION_BROWSER_ACTION_CLICKED';
-
 const POS_MAP = {
     por: 'portero',
     def: 'defensa',
@@ -36,7 +34,8 @@ const bdFutbolRosterScraper = () => {
 console.log("¡A robar plantillas, que no hay pasta pa'comer!");
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    const BROWSER_ACTION_CLICKED_KEY = 'BDFUTBOL_EXTENSION_BROWSER_ACTION_CLICKED';
     if (request.type === BROWSER_ACTION_CLICKED_KEY) {
         console.log(bdFutbolRosterScraper());
     }
-})
+});
